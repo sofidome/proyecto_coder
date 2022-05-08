@@ -10,52 +10,72 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style> 
-        <link rel="stylesheet" href="../css/estilos.css">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+ 
+      
+
 </head>
 <body>
   
     <header>
-        <!--Logo--> 
+        <!--navbar--> 
+   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
         <div class="container">
-    <img src="../imagenes/logo-santa-elena.png" class="logo" 
+    <img src="../imagenes/logo-santa-elena.png" class="navbar-brand img-fluid" 
     alt="logo santa elena">
     
-    <!--Menu-->
-    <nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     
-    <ul>
-        <li> <a href="../index.html">Inicio</a> </li>
-        <li> <a href="../pages/recetas.html">Recetas</a> </li>
-        <li> <a href="../pages/productos.html">Productos</a> </li>
-        <li> <a href="../pages/quienes-somos.html">Quiénes Somos</a> </li>
-        <li> <a href="../pages/contacto.html">Contacto</a> </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"> <a href="../index.html" class="nav-link">Inicio</a> </li>
+        <li class="nav-item"> <a href="../pages/recetas.html" class="nav-link">Recetas</a> </li>
+        <li class="nav-item"> <a href="../pages/productos.html" class="nav-link">Productos</a> </li>
+        <li class="nav-item"> <a href="../pages/quienes-somos.html" class="nav-link active">Quiénes Somos</a> </li>
+        <li class="nav-item"> <a href="../pages/contacto.html" class="nav-link">Contacto</a> </li>
     </ul>
-    </nav> </div> </header>
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </nav> </div></div> </header>
 
-<br><br>
-<section class="quienessomos">
-<span><h1>Somos Santa Elena</h1>
-<p>Está compuesta por una Planta de Procesamiento de alimentos <br>
-    a base de pescados, teniendo como primer producto los derivados <br>
-    de Surimi, conocidos en el mercado bajo la marca “Kani-Kama” (MR). <br>
-     Y por buques congeladores que se dedican a la pesca de langostinos <br>
-     y merluza de cola (Hoki), en estos últimos el pescado se elabora e <br>
-     inmediatamente se congela al alta mar en forma de tronco, filetes o <br>
-     fish block.</p>
+<br><br> <br><br><br><br><br><br><br>
 
-     <img src="../imagenes/santa-elena.jpg" alt="santa elena" width="700px">
-</span>
+
+<section class="container-fluid"> 
+    <div class="row"> 
+   
+<div class="col"><h1>Somos Santa Elena</h1>
+<p>Está compuesta por una Planta de Procesamiento de alimentos 
+    a base de pescados, teniendo como primer producto los derivados 
+    de Surimi, conocidos en el mercado bajo la marca “Kani-Kama” (MR). 
+     Y por buques congeladores que se dedican a la pesca de langostinos 
+     y merluza de cola (Hoki), en estos últimos el pescado se elabora e 
+     inmediatamente se congela al alta mar en forma de tronco, filetes o 
+     fish block.</p>     
+</div>
+<img src="../imagenes/santa-elena.jpg" alt="santa elena" class="col img-fluid">
+</div>
 </section>
-
-<section class="quienessomos">
-<span>
-    <img src="../imagenes/puerto-deseado.jpg" alt="puerto deseado" width="700px">
+<br>
+<section class="container-fluid">
+<div class="row">
+    <img src="../imagenes/puerto-deseado.jpg" alt="puerto deseado" class="col img-fluid">
+    <div class="col">
     <h2>El Lugar</h2>
-    <p>Existe en el Hemisferio Sur, en la Patagonia, un mar extenso, <br>
-         admirable por su pureza. Sus frías aguas australes guardan ejemplares <br>
-          de las más variadas especies. Allí, en la mejor agua helada que el hombre <br>
+    <p>Existe en el Hemisferio Sur, en la Patagonia, un mar extenso, 
+         admirable por su pureza. Sus frías aguas australes guardan ejemplares 
+          de las más variadas especies. Allí, en la mejor agua helada que el hombre 
            pueda imaginar, Pesquera Santa Elena obtiene su riqueza.</p>
-</span>
+</div>
+</div>
 </section>
 
 
