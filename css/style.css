@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+button {
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 7px 10px;
+  margin: 10px;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgb(46, 168, 228);
+}
+
+button:hover {
+  background-color: rgb(0, 138, 206);
+  transform: scale(1.1, 1.1);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  background-color: white;
+}
+
+header .logo {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(52, 52, 52);
+}
+
+header a:hover {
+  color: rgb(46, 168, 228);
+}
+
+#contenido1 .container {
+  text-align: left;
+  padding: 200px 12px;
+}
+
+#contenido1 h1 {
+  color: rgb(46, 168, 228);
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 12px;
+  padding-right: 12px;
+}
+
+#contenido1 p {
+  line-height: 1.2;
+  padding-bottom: 12px;
+  padding-right: 12px;
+}
+
+#contenido1 a {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  flex-wrap: nowrap;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+#contenido1 button {
+  margin-left: 0;
+}
+
+#formulario form {
+  width: 450px;
+  margin: auto;
+  background: rgba(46, 168, 228, 0.183);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#formulario h1 {
+  color: rgb(46, 168, 228);
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+#buscador .buscadores {
+  margin: 10px;
+  padding: 10px;
+  border-style: none;
+  background-color: none;
+  width: 300px;
+  height: 50px;
+}
+
+#news {
+  display: flex;
+  flex-direction: row;
+}
+
+#recetas {
+  color: rgb(46, 168, 228);
+}
+
+#recetas .container {
+  text-align: center;
+  padding: 150px 12px;
+}
+
+#recetas h3 {
+  margin-top: 0;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+#recetas .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 20px;
+  padding-top: 250px;
+  margin: 12px;
+  border-radius: 15px;
+  line-height: 1;
+  width: 300px;
+  height: 400px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("../imagenes/sushi.jpg");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("../imagenes/salsa.jpg");
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("../imagenes/gourmet.jpg");
+}
+
+.carta:nth-child(4) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("../imagenes/snack.jpg");
+}
+
+.carta:nth-child(5) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("../imagenes/tacos.jpg");
+}
+
+.carta:nth-child(6) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("../imagenes/tostadas.jpg");
+}
+
+#formulario .container {
+  text-align: center;
+  padding: 150px 12px;
+  max-width: 1000px;
+}
+
+.botones {
+  text-decoration: none;
+  background-color: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 7px 10px;
+  margin: 10px;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgb(46, 168, 228);
+}
+
+#formulario .buscadores {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  #contenido1 .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #contenido1 .img-container {
+    background-image: url("../imagenes/KRABAS.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #buscador .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #buscador .buscadores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 500px;
+    margin-top: 200px;
+  }
+
+  #recetas .recetas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #recetas .carta {
+    display: block;
+    align-items: end;
+  }
+
+  #formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #formulario .img-container {
+    background-image: url("../imagenes/contacto.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
